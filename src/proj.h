@@ -722,6 +722,7 @@ int PROJ_DLL proj_errno(const PJ *P);
 int PROJ_DLL proj_errno_set(const PJ *P, int err);
 int PROJ_DLL proj_errno_reset(const PJ *P);
 int PROJ_DLL proj_errno_restore(const PJ *P, int err);
+extern void PROJ_DLL proj_context_errno_set(PJ_CONTEXT *ctx, int err);
 const char PROJ_DLL *
 proj_errno_string(int err); /* deprecated. use proj_context_errno_string() */
 const char PROJ_DLL *proj_context_errno_string(PJ_CONTEXT *ctx, int err);

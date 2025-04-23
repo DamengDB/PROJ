@@ -203,7 +203,7 @@ enum pj_io_units pj_right(PJ *P);
 
 PJ_COORD PROJ_DLL proj_coord_error(void);
 
-void proj_context_errno_set(PJ_CONTEXT *ctx, int err);
+void PROJ_DLL proj_context_errno_set(PJ_CONTEXT *ctx, int err);
 void PROJ_DLL proj_context_set(PJ *P, PJ_CONTEXT *ctx);
 void proj_context_inherit(PJ *parent, PJ *child);
 
